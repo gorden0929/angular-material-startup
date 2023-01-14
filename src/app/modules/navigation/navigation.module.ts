@@ -3,8 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { NavigationRoutingModule } from './navigation-routing.module';
 import { NavigationComponent } from './navigation.component';
-import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -14,8 +17,11 @@ import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
   imports: [
     CommonModule,
     NavigationRoutingModule,
-    MaterialModule,
-    ToolbarComponent
+    ToolbarComponent,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
   ]
 })
 export class NavigationModule { }
