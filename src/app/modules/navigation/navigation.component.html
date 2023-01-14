@@ -1,0 +1,46 @@
+<div class="d-flex flex-column h-100">
+  <app-toolbar (navToggle)="sidenav.toggle()"></app-toolbar>
+  <mat-sidenav-container class="flex-grow-1">
+    <mat-sidenav #sidenav mode="side" [opened]="isOpen">
+      <mat-nav-list role="navigation">
+        <a mat-list-item [routerLink]="['/home']" routerLinkActive="active">Home</a>
+        <a mat-list-item [routerLink]="['/login']">Login</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item href="#">Link 3</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
